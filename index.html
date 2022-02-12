@@ -1,0 +1,99 @@
+<!Doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width", initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" contents="ie-edge">
+  <link rel="stylesheet" href="styles.css">
+  <title>My website</title>
+  </head>
+  <body>
+    <div id="main_div"></div>
+    <style>
+      #sample {}
+
+      .hightlight {
+        background-color: yellow
+      }
+      </style>
+    <p id="sample">Does she need to be an empathetic leader? Ask about that. Does she need to
+take your company public? Ask about that. If you're the candidate, talk about why
+you took certain jobs. Explain why you left. Explain why you chose a certain
+school. Share why you decided to go to grad school. Discuss why you took a year
+off to backpack through Europe, and what you got out of the experience. What
+are your biggest weaknesses? Every candidate knows how to answer this
+question: Just pick a theoretical weakness and magically transform that flaw into
+a strength in disguise! For example: "My biggest weakness is getting so absorbed
+in my work that I lose all track of time. Every day I look up and realize everyone
+has gone home! I know I should be more aware of the clock, but when I love what
+I'm doing I just can't think of anything else." So your "biggest weakness" is that
+you'll put in more hours than everyone else? Great. What are your biggest
+strengths? I'm not sure why interviewers ask this question; your resume and
+experience should make your strengths readily apparent! Even so, if you're asked,
+provide a sharp, on-point answer. Be clear and precise! If you're a great problem
+solver, don't just say that: Provide a few examples, pertinent to the opening,
+that prove you're a great problem solver! If you're an emotionally intelligent
+leader, don't just say that!</p>
+<script>
+  let akmerey = document.getElementById("sample").innerHTML;
+const arr = akmerey.split(" ");
+for(let i =0 ; i < arr.length ; i++){
+  if(arr[i].length > 8){
+    arr[i]="<span class='hightlight'>" + arr[i] + "</span>"
+  }
+}
+console.log(arr[0]);
+document.getElementById("sample").innerHTML =arr;
+</script>
+<script>
+var temp_link = document.createElement("a");
+temp_link.href = "https://www.inc.com/jeff-haden/this-new-linkedin-study-reveals-top-8-job-interview-questions-and-how-great-job-candidates-answer-them.html";
+temp_link.target = '_blank';
+temp_link.innerHTML = "link";
+
+
+var par = document.createElement("p");
+par.innerHTML = "some text: ";
+par.appendChild(temp_link);
+
+document.getElementById("main_div").appendChild(par);
+</script>
+<script>
+  #open File
+  with open("a.txt") as fh:
+      for line in fh:
+          #Split Paragraph on basis of '.' or ? or !.
+
+          for l in re.split(r"\.|\?|\!",line):
+              #Split line into list using space.
+              tmp_list = l.split(" ")
+              #Search word and if found print that line
+              if "Dinesh" in tmp_list:
+                  print l
+</script>
+<script>
+  function countWords(){
+
+    // Select all the p elements in the page.
+    var paragraphs = document.getElementsByTagName("p");
+
+    // The counter.
+    var count = 0;
+
+    for(var i = 0; i < paragraphs.length; i++)
+    {
+        // Split the innerHtml of the current paragraph to count the words.
+        count += paragraphs[i].innerHTML.split(' ').length;
+    }
+
+    document.write("Number of words: "+count);
+}
+
+countWords();
+  </script>
+
+
+
+  <script src="index.js" charset="utf-8"></script>
+    </body>
+  </html>
